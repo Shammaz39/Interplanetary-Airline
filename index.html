@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>INTERPLANETARY AIRLINE</title>
+        <link rel="stylesheet" href="style.css">
+   
+        
+       
+    </head>
+
+<body>
+
+    
+    <section>
+        <div class="container">
+            <div class="left"></div>
+            <div class="submit-form">
+                
+                <form  action=""  id='from' method="get">
+                    <h4>Check availability for <em>direction</em></h4>
+                    <fieldset>
+                        <label for="name">Name</label>
+                        <input type="text" required="required">  
+                    </fieldset>
+                    <fieldset>
+                        <label for="phoneNumber" >phoneNumber</label>
+                        <input type="number" required="required" id="number" >
+                    </fieldset>
+                    <fieldset>
+                        <label for="From">From:</label>
+                        <select name="selectbox" id="selectbox" required="required">
+                            <option value="">Select a location...</option>
+                            <option value="EARTH STATION-1">EARTH STATION-1(ISRO)</option>
+                            <option value="EARTH STATION-2">EARTH STATION-2(SPACE-X)</option>
+                            <option value="EARTH STATION-3">EARTH STATION-3(NASA)</option>
+                            <option value="VENUS">VENUS</option>
+                            <option value="JUPITER">JUPITER</option>
+                            <option value="MARS">MARS</option>
+                            <option value="SATURN ">SATURN </option>
+                            <option value="SATURN RING STATION">SATURN RING STATION</option>
+                            <option value="URANUS">URANUS</option>
+                            <option value="NEPTUNE">NEPTUNE</option>
+				            <option value="PLUTO">PLUTO</option>
+
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <label for="To">To:</label>
+                        <select name="selectbox2" id="selectbox2" required="required">
+                            <option value="">Select a location...</option>
+                            <option value="EARTH STATION-1">EARTH STATION-1(ISRO)</option>
+                            <option value="EARTH STATION-2">EARTH STATION-2(SPACE-X)</option>
+                            <option value="EARTH STATION-3">EARTH STATION-3(NASA)</option>
+                            <option value="VENUS">VENUS</option>
+                            <option value="JUPITER">JUPITER</option>
+                            <option value="MARS">MARS</option>
+                            <option value="SATURN ">SATURN </option>
+                            <option value="SATURN RING STATION">SATURN RING STATION</option>
+                            <option value="URANUS">URANUS</option>
+                            <option value="NEPTUNE">NEPTUNE</option>
+				            <option value="PLUTO">PLUTO</option>
+
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <label for="departure">Departure date:</label>
+                            <input name="deparure" type="date" placeholder="Select your date"  required="required" >
+                    </fieldset>
+                    <fieldset>
+                        <label for="return">Return date:</label>
+                            <input name="return" type="date" placeholder="Select your date" required="required">
+                    </fieldset>
+                    <fieldset>
+                        <label for="oneway">Oneway</label>
+                        <input type="radio" name="trip" id="oneway" value="one-way" required="required">
+                   
+                        <label for="round">Round</label>
+                        <input type="radio" name="trip" id="round" value="round" required="required">
+                    </fieldset>
+                    <fieldset>
+                            <button onclick="fxn()">SUBMIT</button>
+                      
+                    </fieldset>
+                   
+                    
+            </div>
+           
+        </div>
+    </section>
+    <script>
+        function fxn(){
+            var s1,s2,num;
+            s1=document.getElementById("oneway");
+            s2=document.getElementById("round");
+            num=document.getElementById("number").value;
+
+
+            if(s1.checked==true)
+            {
+            alert("your total amount is: $50000 to comfirm your ticket payment need to be done,payment details will be send through your given mobile number  " + num);
+
+            }else {
+            alert("your total amount is: $90000 to comfirm your ticket  payment need to be done,payment details will be send through your given mobile number  " + num);
+
+            }
+            console.log(num);
+
+        }
+    </script>
+    
+
+    
+    
+    
+         
+                        
+
+
+</body>
+</html>
